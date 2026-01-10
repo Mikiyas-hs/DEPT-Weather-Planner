@@ -1,4 +1,3 @@
-export default function Page() {
 import { getWeather } from "../lib/api";
 
 export default async function Page() {
