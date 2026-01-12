@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     width: calc(100% - (2 * var(--gutter)));
     margin: 1.5rem auto 0;
     gap: 1rem;
