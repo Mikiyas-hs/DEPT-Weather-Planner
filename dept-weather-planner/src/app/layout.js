@@ -1,5 +1,6 @@
 import "./globals.css";
 import "../components/Hero/hero.css";
+import "../components/Weather/weather.css";
 
 export const metadata = {
   title: "DEPT® Weather Planner",
