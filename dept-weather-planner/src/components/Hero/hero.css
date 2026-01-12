@@ -40,4 +40,14 @@
 }
 
 
+.hero__more {
+    overflow: hidden;
+    max-height: 400px;
+    opacity: 1;
+    transition: max-height 300ms ease, opacity 250ms ease;
+}
+
+.hero__more.is-collapsed {
+    max-height: 0;
+    opacity: 0;
 }

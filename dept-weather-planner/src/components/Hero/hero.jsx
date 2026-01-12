@@ -1,7 +1,11 @@
+"use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Hero() {
+  const [collapsed, setCollapsed] = useState(false);
+  const moreId = "hero-more";
 
   return (
     <header className="hero">
@@ -28,6 +32,10 @@ export default function Hero() {
         offers you.
       </p>
 
+      <div
+        id={moreId}
+        className={`hero__more ${collapsed ? "is-collapsed" : ""}`}
+        role="region"
       >
         <p className="hero__text">
           Built with cutting-edge technologies, our weather planner brings you
@@ -37,7 +45,15 @@ export default function Hero() {
           it suggests the best options based on current and forecasted weather
           conditions.
         </p>
+      </div>
 
+      <button
+  className="hero__toggle"
+  type="button"
+  onClick={() => setCollapsed(!collapsed)}
+>
+  {collapsed ? "Read more" : "Read less"}
+</button>
 
     </header>
   );
