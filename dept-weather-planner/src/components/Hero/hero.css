@@ -1,0 +1,53 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: start;
+    gap: 2rem;
+    background: var(--primary-purple);
+    color: var(--dark-50);
+    padding: 1.25rem var(--gutter) 1.5rem;
+    
+
+    .dept__logo {
+        width: 7rem;
+        height: auto;
+        filter: invert(1);
+    }
+
+
+    .hero__title {
+        margin-top: 1.5rem;
+
+    }
+
+    .hero__text {
+        opacity: 0.9;
+        width: min(21em, 100%);
+    }
+
+
+    .hero__toggle {
+        background: none;
+        border: 0;
+        padding: 0;
+        color: inherit;
+        font-size: var(--text-p);
+        font-weight: var(--fw-regular);
+        text-decoration: underline;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
+
+
+.hero__more {
+    overflow: hidden;
+    max-height: 400px;
+    opacity: 1;
+    transition: max-height 300ms ease, opacity 250ms ease;
+}
+
+.hero__more.is-collapsed {
+    max-height: 0;
+    opacity: 0;
+}

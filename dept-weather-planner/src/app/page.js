@@ -1,18 +1,9 @@
-import { getWeather } from "../lib/api";
+import Hero from "../components/Hero/hero";
 
-export default async function Page() {
-  const weather = await getWeather();
-  const temp = weather.temperature.temp;
-
+export default function HomePage() {
   return (
     <main>
-      <h1>DEPT® Weather Planner</h1>
-      <p>Project setup complete. Components coming next.</p>
-
-      <section>
-        <h2>Data preview</h2>
-        <p>Current temperature: {temp}°C</p>
-      </section>
+      <Hero />
     </main>
   );
 }
