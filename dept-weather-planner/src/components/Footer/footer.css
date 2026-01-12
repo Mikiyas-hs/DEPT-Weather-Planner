@@ -1,0 +1,13 @@
+.footer {
+    background: var(--primary-black);
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    height: 75vh;
+  }
+  
+  .footer__logo {
+    opacity: 1;
+    filter: invert(1);
+  }
+  
