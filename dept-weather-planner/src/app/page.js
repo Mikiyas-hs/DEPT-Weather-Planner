@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/hero";
 import Weather from "../components/Weather/weather";
 import Things from "../components/Things-to-do/things"
+import Footer from "../components/Footer/footer"
 import {getThingsToDo, getWeather} from "../lib/api";
 
 export default async function HomePage() {
