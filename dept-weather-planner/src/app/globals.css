@@ -29,7 +29,7 @@
   --text-base: 1rem;
   --text-p: 16px;
 
-  --xl: 3.75rem;
+  --xl: 4.75rem;
   --h1: 2.5rem;
   --h2: 2.25rem;
   --h3: 2rem;
@@ -73,5 +73,3 @@ svg {
   display: block;
   max-width: 100%;
 }
-
-
