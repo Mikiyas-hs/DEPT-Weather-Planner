@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Hero() {
-  const [collapsed, setCollapsed] = useState(false);
+  // toggle state for the extra text
+  const [collapsed, setCollapsed] = useState(true);
   const moreId = "hero-more";
 
   return (
@@ -50,8 +51,8 @@ export default function Hero() {
       <button
   className="hero__toggle"
   type="button"
-  onClick={() => setCollapsed(!collapsed)}
->
+  // toggle collapsed state & button label based on state
+  onClick={() => setCollapsed(!collapsed)}>
   {collapsed ? "Read more" : "Read less"}
 </button>
 
