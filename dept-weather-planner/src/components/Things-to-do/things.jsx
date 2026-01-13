@@ -2,9 +2,10 @@ import "./things.css";
 import Image from "next/image";
 
 export default function Things({ activities = [], temp }) {
+    // check a activity match with current temp
   const getStatus = (a) =>
     temp >= (a.minTemp ?? -Infinity) && temp <= (a.maxTemp ?? Infinity);
-
+// activities suitable/not suitable for the current temperature
   const couldDo = activities.filter(getStatus).slice(0, 3);
   const shouldNotDo = activities.filter((a) => !getStatus(a)).slice(0, 3);
 
