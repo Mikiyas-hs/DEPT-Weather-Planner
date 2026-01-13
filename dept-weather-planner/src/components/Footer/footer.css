@@ -1,13 +1,17 @@
 .footer {
     background: var(--primary-black);
-    min-height: 200px;
+    min-height: 50em;
     display: grid;
     place-items: center;
-    height: 75vh;
-  }
-  
-  .footer__logo {
-    opacity: 1;
+
+    @media (min-width: 1021px) {
+        max-width: 90rem;
+        margin: 0 auto;
+        min-height: 40rem;
+
+    }
+}
+
+.footer__logo {
     filter: invert(1);
-  }
-  
+}
