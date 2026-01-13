@@ -6,48 +6,64 @@
     background: var(--primary-purple);
     color: var(--dark-50);
     padding: 1.25rem var(--gutter) 1.5rem;
-    
 
-    .dept__logo {
-        width: 7rem;
-        height: auto;
-        filter: invert(1);
+
+    @media (min-width: 1220px) {
+        .hero {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding-left: 5em;
+            padding-right: 0;
+        }
     }
+}
+
+.dept__logo {
+    width: 7rem;
+    height: auto;
+    filter: invert(1);
+}
 
 
-    .hero__title {
-        margin-top: 1.5rem;
+.hero__title {
+    margin-top: 1.5rem;
 
-    }
+}
 
+.hero__text {
+    width: min(21em, 100%);
+}
+
+@media (min-width: 500px) {
     .hero__text {
-        opacity: 0.9;
-        width: min(21em, 100%);
+        width: auto;
     }
+}
 
-
-    .hero__toggle {
-        background: none;
-        border: 0;
-        padding: 0;
-        color: inherit;
-        font-size: var(--text-p);
-        font-weight: var(--fw-regular);
-        text-decoration: underline;
-        cursor: pointer;
-        opacity: 0.9;
+@media (min-width: 1020px) {
+    .hero__text {
+        width: 31em;
     }
+}
+
+.hero__toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: var(--text-p);
+    font-weight: var(--fw-regular);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
 .hero__more {
     overflow: hidden;
     max-height: 400px;
-    opacity: 1;
     transition: max-height 300ms ease, opacity 250ms ease;
 }
 
 .hero__more.is-collapsed {
     max-height: 0;
-    opacity: 0;
 }
