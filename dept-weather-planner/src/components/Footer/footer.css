@@ -1,0 +1,17 @@
+.footer {
+    background: var(--primary-black);
+    min-height: 50em;
+    display: grid;
+    place-items: center;
+
+    @media (min-width: 1021px) {
+        max-width: 90rem;
+        margin: 0 auto;
+        min-height: 40rem;
+
+    }
+}
+
+.footer__logo {
+    filter: invert(1);
+}

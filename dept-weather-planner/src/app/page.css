@@ -1,0 +1,27 @@
+.home {
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 64rem) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .hero_section {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .weather_section {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .things_section {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

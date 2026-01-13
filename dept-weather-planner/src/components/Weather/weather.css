@@ -1,0 +1,44 @@
+.weather {
+    background: var(--primary-rose);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    width: calc(100% - (2 * var(--gutter)));
+    margin: 1.5rem auto 0;
+    gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+
+    @media (min-width: 700px) {
+        grid-template-columns: auto 1fr;
+        max-width: 39rem;
+        }
+}
+
+
+.weather_temp {
+    font-size: var(--xl);
+    
+    @media (min-width: 700px) {
+        grid-row: 1 / span 2; 
+        align-self: start;
+    }
+}
+
+.weather_headline {
+    font-weight: var(--fw-bold);
+    margin: 0.5rem 0;
+
+    @media (min-width: 700px) {
+        grid-column: 2;
+    }
+}
+
+.weather_tekst {
+    margin: 0;
+    
+    @media (min-width: 700px) {
+        grid-column: 2;
+    }
+}
